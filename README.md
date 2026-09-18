@@ -8,4 +8,4 @@ Personal academic site for Joon Kwon. Plain static HTML, no build step.
 - `figures/`, `images/`, `files/` — figures, headshot and the CV PDF
 - `.nojekyll` — tells GitHub Pages to serve the files as-is
 
-The TartanMatch mosaic (`figures/tartanmatch-mosaic.*`) is eight view-to-view warp clips from the lab talk deck, ping-pong looped and tiled 4x2, encoded as webm and mp4 with a JPEG poster.
+The TartanMatch mosaic (`figures/tartanmatch-mosaic.*`) is six cross-sensor warp clips from the lab talk deck tiled 3x2. Each cell shows the two views side by side, then the source warps onto the target and lands aligned. Encoded as webm and mp4 with a JPEG poster.
