@@ -109,7 +109,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--acc); outline-o
 .figure { display: flex; flex-direction: column; gap: 7px; margin: 0; }
 .figure img, .figure video { width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
 .figure figcaption { font: 400 10px/1.5 var(--mono); letter-spacing: .06em; color: var(--fnt); }
-.fig-mosaic { aspect-ratio: 8 / 3; object-fit: cover; background: #fff; }
+.fig-mosaic { aspect-ratio: 2 / 1; object-fit: cover; background: #fff; }
 .fig-orbit { aspect-ratio: 7 / 5; object-fit: contain; background: #fff; }
 .fig-defect { aspect-ratio: 4 / 3; object-fit: cover; }
 .fig-panorama { object-fit: contain; background: #0c0c0c; }

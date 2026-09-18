@@ -62,12 +62,12 @@
 
       <article class="pub">
         <figure class="figure">
-          <video class="fig-mosaic" autoplay muted loop playsinline preload="metadata" poster="figures/tartanmatch-mosaic.jpg" aria-label="Eight view-to-view warps across four scenes: RGB and thermal, RGB and event, RGB and depth, day and night satellite">
+          <video class="fig-mosaic" autoplay muted loop playsinline preload="metadata" poster="figures/tartanmatch-mosaic.jpg" aria-label="Six scenes, each seen by two sensors: the source image slides onto the target and is warped into its view, landing aligned">
             <source src="figures/tartanmatch-mosaic.webm" type="video/webm">
             <source src="figures/tartanmatch-mosaic.mp4" type="video/mp4">
-            <img src="figures/tartanmatch-mosaic.jpg" alt="Eight view-to-view warps across four scenes">
+            <img src="figures/tartanmatch-mosaic.jpg" alt="Six cross-sensor warps, each source landing aligned on its target view">
           </video>
-          <figcaption>Four scenes, each seen by two sensors — RGB and thermal, RGB and event, RGB and depth, day and night satellite. One view warped into the other by predicted correspondence, from a single model.</figcaption>
+          <figcaption>Six cross-sensor pairs — thermal, event, depth and sparse depth onto RGB, night onto day — each source warped into the target view by predicted correspondence, one model for all.</figcaption>
         </figure>
         <div class="pub-body">
           <div class="pub-title">
