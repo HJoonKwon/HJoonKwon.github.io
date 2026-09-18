@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joon Kwon</title>
+  <meta name="description" content="Joon Kwon — robotics and computer vision researcher at Carnegie Mellon University (AirLab). Dense correspondence and geometric foundation models across RGB, event, thermal, depth and LiDAR.">
+  <meta property="og:title" content="Joon Kwon">
+  <meta property="og:description" content="Dense correspondence and geometric foundation models that survive the sensor: event, thermal, depth and LiDAR.">
+  <meta property="og:image" content="https://hjoonkwon.github.io/figures/tartanmatch-mosaic.jpg">
+  <meta property="og:url" content="https://hjoonkwon.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23231f1a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='19' fill='%23fbfaf7'%3EK%3C/text%3E%3C/svg%3E">
+  <script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="site-header">
+    <a class="name" href="#research">Joon Kwon</a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#research"><span class="n">01</span> <span class="label">Research</span></a>
+      <a href="#papers"><span class="n">02</span> <span class="label">Papers</span></a>
+      <a href="#work"><span class="n">03</span> <span class="label">Work</span></a>
+      <a href="#patents"><span class="n">04</span> <span class="label">Patents</span></a>
+      <a href="#cv"><span class="n">05</span> <span class="label">CV</span></a>
+      <button class="theme-toggle" id="theme-toggle" type="button">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+
+  <section class="hero" id="research">
+    <div class="hero-text">
+      <h1>Joon Kwon</h1>
+      <div class="sub">M.S. Robotics, Carnegie Mellon University · AirLab.</div>
+      <p>I work on giving machines a sense of space that survives the sensor. My research extends dense correspondence and geometric foundation models past RGB — into event, thermal and LiDAR — so perception degrades gracefully where robots are actually needed: at night, in smoke, in the field.</p>
+      <p class="mut">Before CMU I was at Boeing AI, supervised by Jay Oh, using CV/ML to improve airplane manufacturing quality at the factory; at Nearthlab, under CTO Youngsuk Chung, carrying drone-perception PoCs into shipped products; and at KAIST, advised by Prof. Hyochoong Bang, on reinforcement learning for spacecraft guidance.</p>
+      <p class="mut">For a Ph.D. I want to push toward spatial representations learned once and held across modality, time and viewpoint — and to keep validating them on real hardware, the way I have for the last five years.</p>
+      <div class="links">
+        <a href="mailto:joonk2@andrew.cmu.edu">joonk2@andrew.cmu.edu</a>
+        <a href="https://scholar.google.com/citations?user=zbJI0jcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a>
+        <a href="https://github.com/HJoonKwon" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hyeokjoon-kwon" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="acc" href="files/Joon_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/photo.jpg" alt="Joon Kwon" width="224" height="280">
+      <div class="loc">Pittsburgh, PA, US<br>Seoul, KR</div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="section" id="papers">
+    <h2 class="section-label"><span class="n">02</span><span>Selected publications</span></h2>
+    <div class="pubs">
+
+      <article class="pub">
+        <figure class="figure">
+          <video class="fig-mosaic" autoplay muted loop playsinline preload="metadata" poster="figures/tartanmatch-mosaic.jpg" aria-label="Eight view-to-view warps across four scenes: RGB and thermal, RGB and event, RGB and depth, day and night satellite">
+            <source src="figures/tartanmatch-mosaic.webm" type="video/webm">
+            <source src="figures/tartanmatch-mosaic.mp4" type="video/mp4">
+            <img src="figures/tartanmatch-mosaic.jpg" alt="Eight view-to-view warps across four scenes">
+          </video>
+          <figcaption>Four scenes, each seen by two sensors — RGB and thermal, RGB and event, RGB and depth, day and night satellite. One view warped into the other by predicted correspondence, from a single model.</figcaption>
+        </figure>
+        <div class="pub-body">
+          <div class="pub-title">
+            <h3>TartanMatch: Towards Universal Dense Correspondence Across Modalities</h3>
+            <span class="pill">Submitted to IEEE RA-L</span>
+          </div>
+          <div class="cite"><strong>H. Kwon</strong>*, J. Cai*, R. Li*, K. Bhandari, G. Hemkumar, P. Maheshwari, Y. Qiu, Y. Zhang, S. Scherer, W. Wang — submitted to IEEE Robotics and Automation Letters, 2026. *Equal contribution.</div>
+          <p>Carrying universal RGB flow models into any-pair matching — every same-modal and cross-modal combination across five modalities — trained on pixel-aligned simulated and real data curated for scale.</p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <figure class="figure">
+          <picture>
+            <source srcset="figures/orbit-transfer-full.webp" type="image/webp">
+            <img class="fig-orbit" src="figures/orbit-transfer-full.png" alt="Spiral low-thrust trajectory from the initial orbit out to the target orbit" width="1800" height="1280">
+          </picture>
+          <figcaption>SAC policy steering a constant-thrust spacecraft from the initial orbit out to the target orbit.</figcaption>
+        </figure>
+        <div class="pub-body">
+          <div class="pub-title">
+            <h3>Autonomous Guidance for Multi-revolution Low-thrust Orbit Transfer via Reinforcement Learning</h3>
+          </div>
+          <div class="cite"><strong>H. Kwon</strong>, S. Oghim, H. Bang — 31st AAS/AIAA Space Flight Mechanics Meeting, 2021. AAS 21-315 · Advances in the Astronautical Sciences, vol. 176, pp. 783–798.</div>
+          <p>A Soft Actor-Critic agent chooses thrust direction across an entire multi-revolution transfer at constant thrust magnitude, meeting the terminal boundary condition while minimising flight time — with a gradient-form reward that makes the long-horizon problem trainable.</p>
+          <!-- PDF link pending a URL: <div class="textlink"><a href="">PDF</a></div> -->
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="work" id="work">
+    <h2 class="section-label"><span class="n">03</span><span>Selected work</span></h2>
+
+    <div class="work-row">
+      <div class="work-text">
+        <div class="eyebrow">2025 — present · DARPA Triage</div>
+        <h3>Target Re-ID &amp; Localization for Search and Rescue</h3>
+        <p>An end-to-end system that detects, localizes and re-identifies casualties for first responders, combining feedforward geometric transformers (VGGT, MapAnything, DepthAnything) with contrastive features that stay distinguishable across viewpoint and time.</p>
+      </div>
+      <div class="placeholder" role="img" aria-label="Figure pending: re-identification tracks">FIGURE — re-ID tracks</div>
+    </div>
+
+    <div class="work-rule"></div>
+
+    <div class="work-row">
+      <div class="work-text">
+        <div class="eyebrow">2021 — 2024 · Nearthlab</div>
+        <h3>Autonomous Wind-Turbine Inspection, End to End</h3>
+        <p>One product, owned across the whole pipeline: autonomous drone flight collecting blade imagery in physically harsh environments; label definition, annotation and data curation; defect detection and classification; and high-resolution stitching — deep feature matching fused with GPS/INS/LiDAR — to localize every defect in 3D. 7× faster inspection, and robots doing dangerous work so people don't have to. Related matching work placed 7th of 642 teams in the CVPR 2022 Image Matching Challenge.</p>
+        <div class="textlink"><a href="https://www.youtube.com/watch?v=TfCYO0yT53o" target="_blank" rel="noopener">Watch the product →</a></div>
+      </div>
+      <figure class="figure">
+        <img class="fig-defect" src="figures/blade-defect.png" alt="Surface defect on a wind-turbine blade captured during autonomous inspection" width="571" height="476">
+        <figcaption>A detected surface defect — classified, then localized in 3D on the stitched blade.</figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure">
+      <picture>
+        <source srcset="figures/blade-panorama.webp" type="image/webp">
+        <img class="fig-panorama" src="figures/blade-panorama.png" alt="Full wind-turbine blade reconstructed from stitched aerial frames" width="2048" height="429">
+      </picture>
+      <figcaption class="caption-row">
+        <span>A complete blade, root to tip, stitched from dozens of aerial frames.</span>
+        <span>Mean reprojection error 0.09 m · GSD ≈ 1400 px/m</span>
+      </figcaption>
+    </figure>
+
+    <div class="work-rule"></div>
+
+    <div class="work-row">
+      <div class="work-text">
+        <div class="eyebrow">2024 — 2025 · Boeing</div>
+        <h3>Recognition at One Million Categories</h3>
+        <p>Metric and representation learning to classify over a million unique aerospace parts, planned for deployment to Boeing Distribution Services — alongside homography-based hole tracking on B-777X wings and anomaly detection for composites and sealant.</p>
+      </div>
+      <div class="placeholder" role="img" aria-label="Figure pending: part retrieval">FIGURE — part retrieval</div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="section" id="patents">
+    <h2 class="section-label"><span class="n">04</span><span>Patents</span></h2>
+    <ul class="patents">
+      <li class="patent">
+        <span class="year">2026</span>
+        <span>A method and an apparatus for merging image based on contour of object</span>
+        <span class="num">KR1029469660000</span>
+      </li>
+      <li class="patent">
+        <span class="year">2025</span>
+        <span>A method and an apparatus for displaying defects of an object in an image</span>
+        <span class="num">KR1027941550000</span>
+      </li>
+      <li class="patent">
+        <span class="year">2025</span>
+        <span>A method and an apparatus for merging images</span>
+        <span class="num">KR1027575010000</span>
+      </li>
+      <li class="patent">
+        <span class="year">2022</span>
+        <span>AI apparatus and method for image stitching for inspecting a wind turbine</span>
+        <span class="num">KR102467590B9<br>EP4328850A3 · US20240070850A1</span>
+      </li>
+    </ul>
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="section" id="cv">
+    <h2 class="section-label"><span class="n">05</span><span>Experience</span></h2>
+    <div class="rows">
+      <div class="row">
+        <div class="dates">2024 – 2025</div>
+        <div><h3>Machine Learning Researcher · The Boeing Company</h3><div class="detail">1M-category parts recognition; homography-based wing hole and fastener tracking on B-777X; anomaly detection for composites and sealant at B-787 wing factories.</div></div>
+      </div>
+      <div class="row">
+        <div class="dates">2022 – 2024</div>
+        <div><h3>Machine Learning Engineer · Nearthlab</h3><div class="detail">Owned the inspection product from data to deployment: label definition, annotation and curation; defect detection and classification; 48 MP blade stitching for 3D defect localization; Kubernetes deployment. Also on-device rotated object detection for autonomous flight, and precision seeding from drone imagery to 10 cm.</div></div>
+      </div>
+      <div class="row">
+        <div class="dates">2021 – 2022</div>
+        <div><h3>Aerospace Engineer · Nearthlab</h3><div class="detail">The data-collection end of the same product — flight software for autonomous blade photography in C++; SITL system and 6-DoF simulator on Gazebo/ROS with second-order motor dynamics.</div></div>
+      </div>
+      <div class="row">
+        <div class="dates">2019 – 2021</div>
+        <div><h3>Research Assistant · ASCL, KAIST</h3><div class="detail">RL for low-thrust orbit transfer; RANDEV 3U CubeSat link budget and mission definition; GNSS/IMU EKF for wing-mounted radar pose.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <section class="section" id="education">
+    <h2 class="section-label"><span class="n">06</span><span>Education</span></h2>
+    <div class="rows edu">
+      <div class="row">
+        <div class="dates">2025 – present</div>
+        <div><h3>M.S. Robotics — Carnegie Mellon University</h3><div class="detail">GPA 4.17/4.0. Advanced Computer Vision, Localization &amp; Mapping, Robot Learning.</div></div>
+      </div>
+      <div class="row">
+        <div class="dates">– 2021</div>
+        <div><h3>B.S. / M.S. Aerospace Engineering — KAIST</h3><div class="detail">GPA 3.9/4.3. Thesis: low-thrust spacecraft trajectory and guidance law design using reinforcement learning.</div></div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div><span class="n">07</span>&nbsp;&nbsp;Notes — occasional writing on correspondence and spatial AI.<!-- Notes link pending a destination: <a href="">Read →</a> --></div>
+    <div>© 2026</div>
+  </footer>
+
+</div>
+<script src="site.js"></script>
+</body>
+</html>
