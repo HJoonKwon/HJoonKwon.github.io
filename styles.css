@@ -151,6 +151,9 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--acc); outline-o
 .work-text h3 { margin: 0; font-size: 29px; line-height: 1.18; letter-spacing: -.015em; font-weight: 400; }
 .work-text p { margin: 0; font-size: 17px; line-height: 1.62; color: var(--mut); text-wrap: pretty; }
 .work-rule { height: 1px; background: var(--rule); }
+.work-feature { display: flex; flex-direction: column; gap: 28px; }
+.work-feature .work-text { max-width: 40em; }
+.fig-map { aspect-ratio: 4 / 3; object-fit: cover; background: #0c0c0c; }
 
 /* Patents --------------------------------------------------------------- */
 .patents { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }

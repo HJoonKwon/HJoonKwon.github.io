@@ -105,13 +105,19 @@
   <section class="work" id="work">
     <h2 class="section-label"><span class="n">03</span><span>Selected work</span></h2>
 
-    <div class="work-row">
+    <div class="work-feature">
       <div class="work-text">
         <div class="eyebrow">2025 — present · DARPA Triage</div>
         <h3>Target Re-ID &amp; Localization for Search and Rescue</h3>
         <p>An end-to-end system that detects, localizes and re-identifies casualties for first responders, combining feedforward geometric transformers (VGGT, MapAnything, DepthAnything) with contrastive features that stay distinguishable across viewpoint and time.</p>
       </div>
-      <div class="placeholder" role="img" aria-label="Figure pending: re-identification tracks">FIGURE — re-ID tracks</div>
+      <figure class="figure">
+        <picture>
+          <source srcset="figures/acfa-map.webp" type="image/webp">
+          <img class="fig-map" src="figures/acfa-map.png" alt="Oblique 3D map of the ACFA training site built in real time from one flight, with six casualty positions marked and the detector's camera frame for each shown above" width="1600" height="1200">
+        </picture>
+        <figcaption>One EO flight over the ACFA site, mapped in real time on board and locked to a surveyed reference map — 55 M points, 4 cm ground sampling. Six casualties reported live by the pipeline within 0.8 m of their surveyed positions, each with the detector's own frame at the moment of detection.</figcaption>
+      </figure>
     </div>
 
     <div class="work-rule"></div>
