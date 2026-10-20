@@ -167,6 +167,7 @@ nav.side-nav { display: none; }
 .textlink { font: 500 11px/1 var(--mono); letter-spacing: .08em; padding-top: 4px; }
 .textlink a { text-decoration: none; color: var(--acc); border-bottom: 1px solid var(--rule); padding-bottom: 2px; }
 .textlink a:hover { border-color: var(--fnt); }
+.textlink a + a { margin-left: 18px; }
 
 /* Selected work --------------------------------------------------------- */
 .work { padding: 60px var(--gutter); display: flex; flex-direction: column; gap: 40px; }
