@@ -167,7 +167,7 @@ nav.side-nav { display: none; }
 .textlink { font: 500 11px/1 var(--mono); letter-spacing: .08em; padding-top: 4px; }
 .textlink a { text-decoration: none; color: var(--acc); border-bottom: 1px solid var(--rule); padding-bottom: 2px; }
 .textlink a:hover { border-color: var(--fnt); }
-.pub-links { display: inline-flex; flex-wrap: wrap; gap: 4px 10px; font: 500 12px/1 var(--mono); letter-spacing: .04em; }
+.pub-links { display: inline-flex; flex-wrap: wrap; gap: 4px 10px; margin-left: 6px; font: normal 500 12px/1 var(--mono); letter-spacing: .04em; vertical-align: 1px; }
 .pub-links a { color: var(--acc); text-decoration: none; }
 .pub-links a::before { content: "["; color: var(--fnt); }
 .pub-links a::after { content: "]"; color: var(--fnt); }
