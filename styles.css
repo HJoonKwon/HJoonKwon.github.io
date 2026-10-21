@@ -73,6 +73,9 @@ a.title:hover { color: var(--hover); }
 .entry-info .venue { margin-top: 2px; font-size: 15px; font-style: italic; }
 .entry-info .links { margin-top: 4px; font-size: 15px; }
 .entry-info p { margin: 6px 0 0; }
+.entry-info .note { font-size: 14px; }
+.entry-info .sub { margin-top: 12px; font-weight: 700; color: var(--head); }
+.list.patents li { padding: 2px 0; }
 
 /* Figures --------------------------------------------------------------- */
 .figure { display: flex; flex-direction: column; gap: 6px; margin: 0; }
@@ -80,7 +83,7 @@ a.title:hover { color: var(--hover); }
 .figure figcaption { font-size: 14.5px; line-height: 1.5; color: var(--fnt); }
 .figure.thumb { flex: 0 0 240px; }
 .fig-mosaic { aspect-ratio: 2 / 1; object-fit: cover; background: #fff; }
-.fig-orbit { aspect-ratio: 3 / 2; object-fit: contain; background: #fff; }
+.fig-orbit { aspect-ratio: 2 / 1; object-fit: contain; background: #fff; }
 .fig-map { aspect-ratio: 4 / 3; object-fit: cover; background: #0c0c0c; }
 .fig-panorama { object-fit: contain; background: #0c0c0c; }
 
