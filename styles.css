@@ -40,7 +40,7 @@ a:hover, a:focus { color: var(--hover); text-decoration: underline; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 strong { font-weight: 700; color: var(--head); }
 
-.page { max-width: 880px; margin: 0 auto; padding: 56px 24px 32px; }
+.page { position: relative; max-width: 880px; margin: 0 auto; padding: 56px 24px 32px; }
 
 /* Profile --------------------------------------------------------------- */
 .profile { display: flex; align-items: center; gap: 40px; }
@@ -97,15 +97,22 @@ a.title:hover { color: var(--hover); }
   margin-top: 56px; display: flex; justify-content: center; align-items: center; gap: 16px;
   color: var(--fnt); font-size: 14.5px;
 }
+
+/* Theme toggle: small icon in the page's top-right corner --------------- */
 .theme-toggle {
-  font: 14px/1 var(--sans); color: var(--fnt); background: transparent;
-  border: 1px solid var(--rule); border-radius: 999px; padding: 5px 12px; cursor: pointer;
+  position: absolute; top: 18px; right: 24px;
+  display: flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; padding: 0;
+  color: var(--fnt); background: transparent; border: 0; border-radius: 50%; cursor: pointer;
 }
-.theme-toggle:hover { color: var(--fg); border-color: var(--fnt); }
+.theme-toggle:hover { color: var(--fg); background: var(--rule); }
+.theme-toggle svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.theme-toggle[data-next="light"] .moon, .theme-toggle[data-next="dark"] .sun { display: none; }
 
 /* Responsive ------------------------------------------------------------ */
 @media (max-width: 680px) {
   .page { padding: 36px 16px 28px; }
+  .theme-toggle { top: 8px; right: 8px; }
   .profile { flex-direction: column-reverse; gap: 24px; }
   .profile-photo img { width: 160px; height: 200px; }
   .entry.row { flex-direction: column; gap: 14px; }

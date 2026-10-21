@@ -8,7 +8,7 @@
   }
   function refresh() {
     var next = current() === 'light' ? 'dark' : 'light';
-    btn.textContent = next === 'dark' ? 'Dark' : 'Light';
+    btn.dataset.next = next;
     btn.setAttribute('aria-label', 'Switch to ' + next + ' theme');
   }
   btn.addEventListener('click', function () {
