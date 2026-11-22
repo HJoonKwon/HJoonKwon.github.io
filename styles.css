@@ -83,7 +83,6 @@ a.title:hover { color: var(--hover); }
 .figure figcaption { font-size: 14.5px; line-height: 1.5; color: var(--fnt); }
 .figure.thumb { flex: 0 0 240px; }
 .fig-mosaic { aspect-ratio: 2 / 1; object-fit: cover; background: #fff; }
-.fig-orbit { aspect-ratio: 2 / 1; object-fit: contain; background: #fff; }
 .fig-map { aspect-ratio: 4 / 3; object-fit: cover; background: #0c0c0c; }
 .fig-panorama { object-fit: contain; background: #0c0c0c; }
 
