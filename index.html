@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261021">
+  <link rel="stylesheet" href="styles.css?v=20261121">
 </head>
 <body>
 <div class="page">
@@ -28,7 +28,7 @@
       <p>Previously, I was a machine learning researcher at Boeing AI and a machine learning engineer at Nearthlab, and I earned my B.S. and M.S. in Aerospace Engineering at KAIST, where I was advised by <a href="http://ascl.kaist.ac.kr/professor" target="_blank" rel="noopener">Prof. Hyochoong Bang</a>.</p>
       <p class="profile-links">
         <a href="mailto:joonk2@andrew.cmu.edu">Email</a> /
-        <a href="files/Joon_CV.pdf?v=20261121" target="_blank" rel="noopener">CV</a> /
+        <a href="files/Joon_CV.pdf?v=20261121b" target="_blank" rel="noopener">CV</a> /
         <a href="https://scholar.google.com/citations?user=zbJI0jcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a> /
         <a href="https://github.com/HJoonKwon" target="_blank" rel="noopener">GitHub</a> /
         <a href="https://www.linkedin.com/in/hyeokjoon-kwon" target="_blank" rel="noopener">LinkedIn</a>
@@ -124,23 +124,40 @@
     <article class="entry">
       <div class="entry-info">
         <span class="title">Casualty Localization for Search &amp; Rescue (DARPA Triage Challenge)</span>
-        <div class="venue">CMU AirLab, 2025 – present</div>
-        <p>I led the monocular 3D mapping and target localization system that reports each casualty's GPS position to first responders, live, from EO and IR drone imagery.</p>
+        <div class="venue">CMU AirLab, 2025 – 2026</div>
+        <div class="links"><a href="https://teamchiron.ai/" target="_blank" rel="noopener">Team Chiron</a> / <a href="https://www.darpa.mil/research/challenges/darpa-triage-challenge/finals" target="_blank" rel="noopener">DARPA Finals</a></div>
+        <p>Team Chiron (Carnegie Mellon University and the University of Pittsburgh) placed 3rd in the Systems Competition at the DARPA Triage Challenge Finals, held at Disaster City, Texas, in November 2026. I led the monocular 3D mapping and target localization system that reports each casualty's GPS position to first responders, live, from EO and IR drone imagery.</p>
       </div>
-      <figure class="figure">
-        <picture>
-          <source srcset="figures/acfa-map.webp" type="image/webp">
-          <img class="fig-map" src="figures/acfa-map.png" alt="Oblique 3D map of the ACFA training site built in real time from one flight, with six casualty positions marked and the detector's camera frame for each shown above" width="1600" height="1200">
-        </picture>
-        <figcaption>Day, EO: one flight mapped in real time; six casualties reported within 0.8 m of their surveyed positions.</figcaption>
-      </figure>
-      <figure class="figure">
-        <picture>
-          <source srcset="figures/acfa-map-night.webp" type="image/webp">
-          <img class="fig-map" src="figures/acfa-map-night.png" alt="Oblique 3D thermal map of the ACFA site built at night from one infrared flight, with eleven casualty positions marked and the detector's thermal frame for each shown above" width="1600" height="1200">
-        </picture>
-        <figcaption>Night, thermal: the same site from one infrared flight; eleven casualties reported live.</figcaption>
-      </figure>
+      <div class="fig-grid">
+        <figure class="figure">
+          <picture>
+            <source srcset="figures/dtc-team-chiron.webp" type="image/webp">
+            <img class="fig-photo" src="figures/dtc-team-chiron.jpg" alt="Team Chiron posing on the Disaster City sign at the DARPA Triage Challenge Finals" width="1200" height="800" loading="lazy">
+          </picture>
+          <figcaption>Team Chiron at the Finals. Photo: DARPA.</figcaption>
+        </figure>
+        <figure class="figure">
+          <picture>
+            <source srcset="figures/dtc-gate1-uavs.webp" type="image/webp">
+            <img class="fig-photo" src="figures/dtc-gate1-uavs.jpg" alt="A Team Chiron member preparing UAVs at the Gate 1 launch zone" width="1200" height="800" loading="lazy">
+          </picture>
+          <figcaption>Preparing our UAVs at the Gate 1 launch zone. Photo: DARPA.</figcaption>
+        </figure>
+        <figure class="figure">
+          <a href="figures/acfa-map.png" target="_blank" rel="noopener"><picture>
+            <source srcset="figures/acfa-map.webp" type="image/webp">
+            <img class="fig-map" src="figures/acfa-map.png" alt="Oblique 3D map of the ACFA training site built in real time from one flight, with six casualty positions marked and the detector's camera frame for each shown above" width="1600" height="1200" loading="lazy">
+          </picture></a>
+          <figcaption>Day, EO: one flight mapped in real time; six casualties reported within 0.8 m of their surveyed positions.</figcaption>
+        </figure>
+        <figure class="figure">
+          <a href="figures/acfa-map-night.png" target="_blank" rel="noopener"><picture>
+            <source srcset="figures/acfa-map-night.webp" type="image/webp">
+            <img class="fig-map" src="figures/acfa-map-night.png" alt="Oblique 3D thermal map of the ACFA site built at night from one infrared flight, with eleven casualty positions marked and the detector's thermal frame for each shown above" width="1600" height="1200" loading="lazy">
+          </picture></a>
+          <figcaption>Night, thermal: the same site from one infrared flight; eleven casualties reported live.</figcaption>
+        </figure>
+      </div>
     </article>
 
     <article class="entry">
