@@ -83,10 +83,8 @@ a.title:hover { color: var(--hover); }
 .figure figcaption { font-size: 14.5px; line-height: 1.5; color: var(--fnt); }
 .figure.thumb { flex: 0 0 240px; }
 .fig-mosaic { aspect-ratio: 2 / 1; object-fit: cover; background: #fff; }
-.fig-map { aspect-ratio: 4 / 3; object-fit: cover; background: #0c0c0c; }
 .fig-photo { aspect-ratio: 3 / 2; object-fit: cover; }
 .fig-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 14px; }
-.fig-grid a { display: block; }
 .fig-panorama { object-fit: contain; background: #0c0c0c; }
 
 /* Patents / experience / education --------------------------------------- */
