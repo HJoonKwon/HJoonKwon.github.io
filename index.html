@@ -71,21 +71,33 @@
       </div>
     </article>
 
-    <article class="entry">
+    <article class="entry row">
+      <figure class="figure thumb">
+        <picture>
+          <source srcset="figures/foundationcov.webp" type="image/webp">
+          <img src="figures/foundationcov.jpg" alt="Building reconstructed from images, colored by predicted depth uncertainty on the left and by RGB on the right, with relative pose covariances drawn for pairs of camera frames" width="720" height="411" loading="lazy">
+        </picture>
+      </figure>
       <div class="entry-info">
         <span class="title">FoundationCov: Making Geometric Foundation Models Probabilistic with Predictive Covariances</span>
         <div class="authors">R. Li, X. Fei, J. Cai, <strong>H. Kwon</strong>, Y. Chen, Y. Zhang, S. Scherer, W. Wang</div>
         <div class="venue">Under review, 2026</div>
-        <p>Covariance heads on frozen geometric foundation models predict the uncertainty of their pose, depth and intrinsics outputs, so downstream estimators can weight them.</p>
+        <p>Lightweight heads on frozen geometric foundation models predict covariances for their depth, relative pose and intrinsics, so downstream estimators can weight them.</p>
       </div>
     </article>
 
-    <article class="entry">
+    <article class="entry row">
+      <figure class="figure thumb">
+        <picture>
+          <source srcset="figures/anonstar.webp" type="image/webp">
+          <img src="figures/anonstar.jpg" alt="Four scenes, indoor, night, forest and a crowded hallway, each shown in RGB, lidar, radar, thermal and event" width="720" height="374" loading="lazy">
+        </picture>
+      </figure>
       <div class="entry-info">
         <span class="title">Anon*: Scaling Multimodal Perception with 100h of Radar, Thermal, and Event Data</span>
         <div class="authors">J.-T. Huang, P. Maheshwari, T. Huang, J. Kim, E. M. Lee, A. Shaikh, G. Shin, K. Bhandari, M. Murugan, T. Chartier, G. Hemkumar, B. Chang, J. Cai, B. Ebiyau, X. Fei, S. Ahn, <strong>H. Kwon</strong>, N. Leone, J. Yuan, M. Kaess, S. Khattak, S. Scherer, W. Wang, A. Rowe</div>
         <div class="venue">Under review, 2026</div>
-        <p>100 hours of radar, thermal and event data, used to study how perception with these sensors scales with data.</p>
+        <p>A 109-hour handheld dataset pairing lidar and stereo RGB with raw mmWave radar, stereo thermal and stereo event cameras, across indoor, outdoor and off-road scenes, day and night.</p>
       </div>
     </article>
 
