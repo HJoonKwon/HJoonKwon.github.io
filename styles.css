@@ -80,10 +80,12 @@ a.title:hover { color: var(--hover); }
 /* Figures --------------------------------------------------------------- */
 .figure { display: flex; flex-direction: column; gap: 6px; margin: 0; }
 .figure img, .figure video { width: 100%; height: auto; display: block; border-radius: 10px; }
-.figure figcaption { font-size: 14.5px; line-height: 1.5; color: var(--fnt); }
+.figure figcaption { font-size: 14.5px; line-height: 1.5; color: var(--fg); }
 .figure.thumb { flex: 0 0 240px; }
 .fig-mosaic { aspect-ratio: 2 / 1; object-fit: cover; background: #fff; }
 .fig-photo { aspect-ratio: 3 / 2; object-fit: cover; }
+.fig-map { aspect-ratio: 4 / 3; object-fit: cover; background: #0c0c0c; }
+.figure a { display: block; }
 .fig-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 14px; }
 .fig-panorama { object-fit: contain; background: #0c0c0c; }
 
